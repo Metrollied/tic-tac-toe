@@ -1,0 +1,75 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+#header {
+
+    font-size: 60px;
+    height: 80px;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+#playingArea {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+}
+
+#playerOne, #playerTwo {
+    width: 80px;
+}
+
+#playerOneArea, #playerTwoArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 100px;
+    text-align: center;
+    gap: 5px;
+}
+
+#board {
+    height: 350px;
+    width: 350px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    background-color: aquamarine;
+    align-self: center;
+    position: sticky;
+}
+
+.square {
+    width: auto;
+    border: solid 1px;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#winnerText {
+    min-height: 20px;
+}
+
+#footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    margin: 0;
+}
